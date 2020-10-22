@@ -1,7 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.rocket-internet.com	TRUE	/	FALSE	1999999999	__cfduid	d2f0b4119f05f6be3b84923999b7b03211603090247
-www.rocket-internet.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-www.rocket-internet.com	TRUE	/	FALSE	1999999999	cf_ob_info	504:5e489635bbc51408:JHB
-www.rocket-internet.com	TRUE	/	FALSE	1999999999	cf_use_ob	443
-
