@@ -17,6 +17,78 @@
 .company-item:hover .companies-image--black:first-of-type {
 	opacity: 0;
 }
+
+.companies-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -10px;
+  margin-left: -10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+
+.company-item {
+    position: relative;
+    width: 33.3333%;
+    padding: 10px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.our-companies-col-panel {
+    height: 325px;
+    padding: 60px 30px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    background-color: #fff;
+}
+
+.company-link {
+  position: relative;
+  border: 1px solid #ddd;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.padding-tb-xl {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.container-layout {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.margin-auto {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 </style>
    </head>
    <body class="body-3">
@@ -333,44 +405,57 @@
                   <img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec136a22f007d0ab4a6dd86_homepage-investment.svg" alt="" class="homepage-second-row-image"/>
                   <h4 class="text-grey">Angel</h4>
                   <p class="paragraph-2 text-grey">We invest in individuals and businesses that have the potential to succeed. Find out more about our angel project.</p><br/><br/></p>
-                  <a href="http://www.globalfounderscapital.com/" target="_blank" class="ghost-button w-button">VENTURE CAPITAL</a>
+                  <a href="http://www.globalfounderscapital.com/" target="_blank" class="ghost-button w-button">Project</a>
                </div>
                <div class="column w-col w-col-4 w-col-stack">
                   <img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec136a2c3db1e224d66f90d_homepage-growth.svg" alt="" class="homepage-second-row-image"/>
                   <h4 class="text-grey">Ecosystem</h4>
                   <p class="paragraph-2 text-grey">We create an entrepreneurial ecosystem focused on growing and/or helping to grow start-ups. Find out more about our ecosystem.<br/><br/></p>
-                  <a href="careers.html" class="ghost-button w-button">OPEN POSITIONS</a>
+                  <a href="careers.html" class="ghost-button w-button">Entrepreneuship Ecosystem</a>
                </div>
             </div>
          </div>
       </div>
-      <div class="row-section padding-tb-xxl homepage-third-row">
-         <div class="container container-horizontal">
-            <h3 class="heading-3 title-with-border">Our Companies<br/></h3>
-            
-			
-			
-			
-			<div class="companies-wrapper">
-			
-			<div class="company-item"><a data-modal-id="agencasa" href="#" class="company-link w-inline-block"><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ecbc6b545632141ea5dc337_AgenCasa_black.svg" alt="" class="image-3 companies-image--black"><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ecbc6b686ad52352ce097d4_AgenCasa_color.svg" alt="" class="image-2"></a></div>
-			
-			<div class="company-item"><a data-modal-id="bluenest" href="#" class="company-link w-inline-block"><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ecbc6b6a6fd59db0ecf5be6_Bluenest_black.svg" alt="" class="image-3 companies-image--black"><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ecbc6b636f72f726d556149_Bluenest_color.svg" alt="" class="image-2"></a></div>
-			
-			<div class="company-item"><a data-modal-id="everstox" href="#" class="company-link w-inline-block"><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5eec84a04beb246e52ff0d96_Everstox_black.svg" alt="" class="image-3 companies-image--black"><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5eec849ed80e86600ded6efa_Everstox_color.svg" alt="" class="image-2"></a></div>
-			
-			
-			
-			</div>
-			
-			
-            <img data-aos="fade-down" class="phone-img" src="assets/" alt="" sizes="(max-width: 991px) 100vw, 750px" data-aos-easing="ease-out-quad" data-aos-anchor-placement="top-center" srcset="assets/phone.png 500w, assets/phone.png 1022w" data-aos-duration="800"/>
-			
-			<img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ee0916e3b550139583cbddd_our-companies-GSG.svg" data-aos-delay="100" data-aos="fade-up" alt="" class="bubble-logo bubble-jumia aos-init"/><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ee0916ebae55172a12e743b_our-companies-Expertlead.svg" data-aos-delay="150" data-aos="fade-up" alt="" class="bubble-logo bubble-foodpanda"/><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec24b267b4d1193faf221d0_our-companies-g-f-g.svg" data-aos-delay="200" data-aos="fade-up" alt="" class="bubble-logo bubble-gfg"/><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec24b27c935a8ac2a416bc4_our-companies-westwing.svg" data-aos-delay="250" data-aos="fade-up" alt="" class="bubble-logo bubble-westwing"/><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec24b26f6793e04d8e83aa4_our-companies-nestpick.svg" date-aos-delay="200" data-aos="fade-up" alt="" class="bubble-logo bubble-nestpick"/><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ee0916e1d046680683c3623_our-companies-Instafreight.svg" data-aos-delay="200" data-aos="fade-up" alt="" class="bubble-logo bubble-dh"/><img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec24b26225d1246ab5a435f_our-companies-spotcap.svg" data-aos-delay="150" data-aos="fade-up" alt="" class="bubble-logo bubble-spotcap"/>
+      <div class="row-section">
+         <div class="container-layout padding-tb-xl margin-auto">
+            <div class="title-with-doubleborder"></div>
+            <div class="title-section margin-b-xl">
+               <h3 class="title">Our Companies<br></h3>
+               
+            </div>
+            <div class="companies-wrapper">
+               <div class="company-item">
+                  <a data-modal-id="agencasa" href="#" class="company-link w-inline-block">
+                     <img src="assets/Bisnest-W.png" alt="" class="image-3 companies-image--black">
+                     <img src="assets/Bisnest-B.png" alt="" class="image-2">
+                  </a>
+               </div>
+                <div class="company-item">
+                  <a data-modal-id="agencasa" href="#" class="company-link w-inline-block">
+                     <img src="assets/Oda-Bazaar-W.png" alt="" class="image-3 companies-image--black">
+                     <img src="assets/Oda-Bazaar-R.png" alt="" class="image-2">
+                  </a>
+               </div>
+                <div class="company-item">
+                  <a data-modal-id="agencasa" href="#" class="company-link w-inline-block">
+                     <img src="assets/edusage-W.png" alt="" class="image-3 companies-image--black">
+                     <img src="assets/edusage-Bb.png" alt="" class="image-2">
+                  </a>
+               </div>
+                <div class="company-item">
+                  <a data-modal-id="agencasa" href="#" class="company-link w-inline-block">
+                     <img src="assets/convalley-W.png" alt="" class="image-3 companies-image--black">
+                     <img src="assets/convalley-R.png" alt="" class="image-2">
+                  </a>
+               </div>
+               
+            </div>
          </div>
       </div>
+
+
       <div class="container container-horizontal">
-         <p data-aos="fade" class="olli-quote font-xl max-720">“BizVentur enables entrepreneurship. We build and invest in great technology companies globally and provide a unique blend of operational support and capital.”<br/></p>
+         <p data-aos="fade" class="olli-quote font-xl max-720">“BizVentur catalyst the business. We develop and growth our owns enterprises and invest in potential tech and non tech companies in our entrepreneurship ecosystem”<br/></p>
          <p class="margin-top-l margin-b-sxl">
             <em class="text-light-grey font-small"></em><br/>
          </p>
@@ -388,11 +473,7 @@
                   <div class="container slide-container">
                      <div class="homepage-carousel-slide-description">
                         <div class="carousel-col">
-                           <div class="title-with-doubleborder doubleborder-light">
-                              <h4 class="text-white homepage-carousel-slide-title">Text Example</h4>
-                              <div class="font-title text-uppercase text-white homepage-carousel-slide-subtitle">Text Example<br/></div>
-                              <p class="text-white">Text Example is the largest fashion e-Commerce company in Malaysia. BizVentur helped us to attain segment leadership by offering new technologies, market insights and effective business solutions.</p>
-                           </div>
+                           
                         </div>
                      </div>
                   </div>
@@ -409,38 +490,25 @@
             <div class="title-with-doubleborder doubleborder-light w-row">
                <div class="column-2 w-col w-col-6 w-col-stack">
                   <h3 class="text-white footer-title margin-bottom-l">BizVentur</h3>
-                  <p class="text-light-grey font-small line-height-l margin-bottom-l">BizVentur Internet incubates, builds, develops operationally and strategically invests in internet and technology companies globally. It provides operational support to its companies and helps them scale internationally. BizVentur Internet&#x27;s selected companies are active in a large number of countries around the world.<br/></p>
-                  <div class="font-size-small">
-                     <a href="imprint.html" class="footer-link text-light-grey link-inline">Imprint &amp; Privacy Policy</a>
-                     <div class="horizontal-divider"></div>
-                     <a href="#" class="footer-link text-light-grey link-inline">Cookies</a>
-                  </div>
+                  <p class="text-light-grey font-small line-height-l margin-bottom-l">Bizventur is a company that ventures into transforming indigenous ideas into a rapidly growing companies providing products and services to the market.<br/></p>
+                  
                </div>
                <div class="column-3 w-col w-col-6 w-col-stack">
                   <div class="footer-links w-row">
-                     <div class="w-col w-col-3"><a href="companies.html" class="margin-top-m footer-title-link">Companies</a>
-                        <a href="companies.html" class="footer-link text-light-grey line-height-l font-size-small">Network of<br/>Companies</a>
+                     <div class="w-col w-col-3"><a href="companies.html" class="margin-top-m footer-title-link">About</a>
+                      
                      </div>
                      <div class="w-col w-col-3">
-                        <a href="#" class="margin-top-m footer-title-link">Careers</a>
-                        <a href="#" class="footer-link text-light-grey line-height-l font-size-small">Life in Berlin</a>
-                        <a href="#" class="footer-link text-light-grey line-height-l font-size-small">BizVentur</a>
+                        <a href="#" class="margin-top-m footer-title-link">Companies</a>
+                        
                      </div>
                      <div class="w-col w-col-4">
-                        <a href="#" class="margin-top-m footer-title-link">Investors</a>
-                        <a href="#" class="footer-link text-light-grey line-height-l font-size-small">Financial Information</a>
-                        <a href="#" class="footer-link text-light-grey line-height-l font-size-small">Convertible Bond</a>
-                        <a href="#" class="footer-link text-light-grey line-height-l font-size-small">Financial Calendar</a>
-                        <a href="#" class="footer-link text-light-grey line-height-l font-size-small">News</a>
-                        <a href="#" class="footer-link text-light-grey line-height-l font-size-small">Leadership &amp; Governance</a>
-                        <a id="AGM-link" href="#" class="footer-link text-light-grey line-height-l font-size-small">Annual General Meeting</a>
-                        <a href="#" class="footer-link text-light-grey line-height-l font-size-small">Contact</a>
+                        <a href="#" class="margin-top-m footer-title-link">Blog</a>
+                        
                      </div>
                      <div class="w-col w-col-2">
                         <a href="media.html" class="margin-top-m footer-title-link">Media</a>
-                        <a href="media.html#BizVentur-news" class="footer-link text-light-grey line-height-l font-size-small">BizVentur News</a>
-                        <a href="media.html#social-media" class="footer-link text-light-grey line-height-l font-size-small">Social Media</a>
-                        <a href="media.html#downloads" class="footer-link text-light-grey line-height-l font-size-small">Downloads</a>
+                        
                      </div>
                   </div>
                </div>
