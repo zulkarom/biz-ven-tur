@@ -34,6 +34,8 @@ use yii\helpers\Inflector;
  * read-only.
  * @property array $passedOptions The names of the options passed during execution. This property is
  * read-only.
+ * @property Request $request
+ * @property Response $response
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
@@ -555,7 +557,13 @@ class Controller extends \yii\base\Controller
 
         /** @var \ReflectionParameter $reflection */
         foreach ($method->getParameters() as $i => $reflection) {
-            if ($reflection->getClass() !== null) {
+            if (PHP_VERSION_ID >= 80000) {
+                $class = $reflection->getType();
+            } else {
+                $class = $reflection->getClass();
+            }
+
+            if ($class !== null) {
                 continue;
             }
             $name = $reflection->getName();

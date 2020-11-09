@@ -1,14 +1,14 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 /**
- * This file is part of phpDocumentor.
+ * phpDocumentor
  *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * PHP Version 5.3
  *
- * @link http://phpdoc.org
+ * @author    Vasil Rangelov <boen.robot@gmail.com>
+ * @copyright 2010-2018 Mike van Riel / Naenius (http://www.naenius.com)
+ * @license   http://www.opensource.org/licenses/mit-license.php MIT
+ * @link      http://phpdoc.org
  */
 
 namespace phpDocumentor\Reflection\DocBlock\Tags;
@@ -17,14 +17,12 @@ use phpDocumentor\Reflection\DocBlock\Description;
 use phpDocumentor\Reflection\DocBlock\DescriptionFactory;
 use phpDocumentor\Reflection\Types\Context as TypeContext;
 use Webmozart\Assert\Assert;
-use function preg_match;
 
 /**
  * Reflection class for a {@}version tag in a Docblock.
  */
 final class Version extends BaseTag implements Factory\StaticMethod
 {
-    /** @var string */
     protected $name = 'version';
 
     /**
@@ -43,14 +41,14 @@ final class Version extends BaseTag implements Factory\StaticMethod
         [^\s\:]+\:\s*\$[^\$]+\$
     )';
 
-    /** @var string|null The version vector. */
-    private $version;
+    /** @var string The version vector. */
+    private $version = '';
 
-    public function __construct(?string $version = null, ?Description $description = null)
+    public function __construct($version = null, ?Description $description = null)
     {
         Assert::nullOrStringNotEmpty($version);
 
-        $this->version     = $version;
+        $this->version = $version;
         $this->description = $description;
     }
 
@@ -58,7 +56,7 @@ final class Version extends BaseTag implements Factory\StaticMethod
         ?string $body,
         ?DescriptionFactory $descriptionFactory = null,
         ?TypeContext $context = null
-    ) : ?self {
+    ): ?self {
         if (empty($body)) {
             return new static();
         }
@@ -68,21 +66,16 @@ final class Version extends BaseTag implements Factory\StaticMethod
             return null;
         }
 
-        $description = null;
-        if ($descriptionFactory !== null) {
-            $description = $descriptionFactory->create($matches[2] ?? '', $context);
-        }
-
         return new static(
             $matches[1],
-            $description
+            $descriptionFactory->create($matches[2] ?? '', $context)
         );
     }
 
     /**
      * Gets the version section of the tag.
      */
-    public function getVersion() : ?string
+    public function getVersion(): ?string
     {
         return $this->version;
     }
@@ -90,16 +83,8 @@ final class Version extends BaseTag implements Factory\StaticMethod
     /**
      * Returns a string representation for this tag.
      */
-    public function __toString() : string
+    public function __toString(): string
     {
-        if ($this->description) {
-            $description = $this->description->render();
-        } else {
-            $description = '';
-        }
-
-        $version = (string) $this->version;
-
-        return $version . ($description !== '' ? ($version !== '' ? ' ' : '') . $description : '');
+        return $this->version . ($this->description ? ' ' . $this->description->render() : '');
     }
 }

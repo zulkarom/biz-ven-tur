@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 /*
  * This file is part of PHPUnit.
  *
@@ -24,6 +24,8 @@ class Count extends Constraint
 
     public function __construct(int $expected)
     {
+        parent::__construct();
+
         $this->expectedCount = $expected;
     }
 
@@ -87,8 +89,6 @@ class Count extends Constraint
 
             return $count;
         }
-
-        return null;
     }
 
     /**
@@ -98,7 +98,7 @@ class Count extends Constraint
     protected function getCountOfGenerator(Generator $generator): int
     {
         for ($count = 0; $generator->valid(); $generator->next()) {
-            $count++;
+            ++$count;
         }
 
         return $count;

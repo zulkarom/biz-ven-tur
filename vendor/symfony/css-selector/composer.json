@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": ">=7.2.5"
+        "php": ">=5.3.9"
     },
     "autoload": {
         "psr-4": { "Symfony\\Component\\CssSelector\\": "" },
@@ -30,6 +30,8 @@
     },
     "minimum-stability": "dev",
     "extra": {
-        "branch-version": "5.2"
+        "branch-alias": {
+            "dev-master": "2.8-dev"
+        }
     }
 }

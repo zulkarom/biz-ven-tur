@@ -36,6 +36,9 @@
     },
     "config": {
         "process-timeout": 1800,
+		"platform":{
+			"php" : "7.1.33"
+		} ,
         "fxp-asset": {
             "enabled": false
         }
