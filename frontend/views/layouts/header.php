@@ -290,8 +290,8 @@
                <nav role="navigation" class="nav-menu w-nav-menu">
                   <a href="#" class="mobile-nav-link w-nav-link">ABOUT</a>
           <a href="#" class="mobile-nav-link w-nav-link">COMPANIES</a>
-                  <a href="#" class="mobile-nav-link investors w-nav-link">BLOG  </a>
-          <a href="#" class="mobile-nav-link w-nav-link">MEDIA</a>
+                  <a href="#" class="mobile-nav-link investors w-nav-link">SERVICES</a>
+          <a href="#" class="mobile-nav-link w-nav-link">CONTACT US</a>
                </nav>
                <div class="menu-button text-uppercase w-nav-button">
                   <div class="text-block">menu</div>
