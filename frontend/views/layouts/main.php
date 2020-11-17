@@ -136,7 +136,7 @@ div.d {
                   <img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec136a248097607fd6ef656_homepage-incubation.svg" alt="" class="homepage-second-row-image"/>
                   <h4 class="text-grey">Ventures</h4>
                   <div class="grid-container"> 
-                  <p class="paragraph-2 text-grey">We build market-leading companies from scratch. We also operate helping start-ups to grow and consolidate their business. Find out more about our portfolio of companies.</p>
+                  <p class="paragraph-2 text-grey">We build companies from scratch. We also help start-up to grow and consolidate their business. Find out more about our portfolio of companies.</p>
                   </div>
                   <a href="" class="ghost-button w-button">Our Companies</a>    
                </div>
