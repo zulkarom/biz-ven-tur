@@ -11,7 +11,7 @@
             <div class="companies-wrapper">
               <div class="grid-containerCol w-col-3 w-col-stack">
                      <div class="company-item">
-                        <a data-modal-id="agencasa" href="#" class="company-link w-inline-block">
+                        <a data-modal-id="agencasa" target="_blank" href="https://www.facebook.com/bisnestofficial" class="company-link w-inline-block">
                            <img src="<?= $dirAssests?>/pictures/Bisnest-W.png" alt="" class="image-3 companies-image--black">
                            <img src="<?= $dirAssests?>/pictures/Bisnest-W1.png" alt="" class="image-2">
                         </a>
@@ -53,7 +53,7 @@
                   
                  <div class="grid-containerCol w-col-3 w-col-stack">
                      <div class="company-item">
-                        <a data-modal-id="agencasa" href="#" class="company-link w-inline-block">
+                        <a data-modal-id="agencasa" target="_blank" href="https://www.facebook.com/IBN-Agro-Farm-110867724169562" class="company-link w-inline-block">
                            <img src="<?= $dirAssests?>/pictures/IbnAgroFarm-W.png" alt="" class="image-3 companies-image--black">
                            <img src="<?= $dirAssests?>/pictures/IbnAgroFarm-W1.png" alt="" class="image-2">
                         </a>
@@ -73,7 +73,7 @@
 
                    <div class="grid-containerCol w-col-3 w-col-stack">
                      <div class="company-item">
-                        <a data-modal-id="agencasa" href="#" class="company-link w-inline-block">
+                        <a data-modal-id="agencasa" target="_blank" href="https://instagram.com/projekmakanmayu?igshid=1i1kdi4hglcuv" class="company-link w-inline-block">
                            <img src="<?= $dirAssests?>/pictures/projectMakanMayu-W.png" alt="" class="image-3 companies-image--black">
                            <img src="<?= $dirAssests?>/pictures/projectMakanMayu-W1.png" alt="" class="image-2">
                         </a>
@@ -82,7 +82,7 @@
 
                    <div class="grid-containerCol w-col-3 w-col-stack">
                      <div class="company-item">
-                        <a data-modal-id="agencasa" href="#" class="company-link w-inline-block">
+                        <a data-modal-id="agencasa" target="_blank" href="https://ijeob.com/" class="company-link w-inline-block">
                            <img src="<?= $dirAssests?>/pictures/ijeob-W.png" alt="" class="image-3 companies-image--black">
                            <img src="<?= $dirAssests?>/pictures/ijeob-W1.png" alt="" class="image-2">
                         </a>
