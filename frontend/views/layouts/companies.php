@@ -3,7 +3,7 @@
          <div class="container-layout padding-tb-xl margin-auto">
             <div class="title-with-doubleborder"></div>
             <div class="margin-b-xl"> 
-               <h2 class="text-bold">OUR COMPANIES</h2>
+               <h2 class="text-bold">OUR CLIENTS</h2>
             </div>
             
 
