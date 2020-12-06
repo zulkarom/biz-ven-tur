@@ -10,7 +10,7 @@ $dirAssests=Yii::$app->assetManager->getPublishedUrl('@frontend/views/myassets')
 <html>
    <head>
       <meta charset="utf-8"/>
-      <title>BIZVENTUR | We Catalyst Business</title>
+      <title>BVentur | We Catalyst Business</title>
       
 
       <meta content="width=device-width, initial-scale=1" name="viewport"/>

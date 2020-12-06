@@ -285,7 +285,7 @@
          <div data-collapse="small" data-animation="default" data-duration="400" data-no-scroll="1" data-doc-height="1" role="banner" class="navbar w-nav">
             <div class="container container-header w-container">
                <a href="" aria-current="page" class="brand w-nav-brand w--current">
-                  <div class="html-embed w-embed"><b><font face="Times new Roman" color="#2D3239" size="4">BIZVENTUR</font></b></div>
+                  <div class="html-embed w-embed"><b><font face="Times new Roman" color="#2D3239" size="4">BVENTUR</font></b></div>
                </a>
                <nav role="navigation" class="nav-menu w-nav-menu">
                   <a href="#" class="mobile-nav-link w-nav-link">ABOUT</a>
@@ -302,7 +302,7 @@
       </header>
 
        <div class="row-section padding-tb-xxl homepage-first-row">
-         <h1 class="heading">BizVentur</h1>
+         <h1 class="heading">BVentur</h1>
          <h2 class="heading-2">We catalyst business.<br/></h2>
-         <p class="paragraph font-size-small text-grey text-center">Bizventur is a company that ventures into transforming indigenous ideas into a rapidly growing companies providing products and services to the market.<br/></p>
+         <p class="paragraph font-size-small text-grey text-center">BVentur is a company that ventures into transforming indigenous ideas into a rapidly growing companies providing products and services to the market.<br/></p>
       </div>

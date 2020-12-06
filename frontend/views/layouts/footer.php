@@ -4,7 +4,7 @@
               <div class="column-2 w-col w-col-2 w-col-stack">
               </div>
                <div class="column-2 w-col w-col-4 w-col-stack ">
-                  <h3 class="text-white">BizVentur</h3>
+                  <h3 class="text-white">BVentur</h3>
                   <p class="big text-white">The Herritage Serviced Mines,<br/>
                   43300, Seri Kembangan,<br/>
                   Selangor, Malaysia<br/>
