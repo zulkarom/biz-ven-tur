@@ -121,7 +121,7 @@ div.d {
 
     <!-- Header -->
     <?=$this->render('header', [    
-
+        'dirAssests' => $dirAssests,
     ]);
     ?>
     <!-- Header -->

@@ -34,7 +34,7 @@
                         <div class="nttip" data-tooltip-position="top" style="height: auto; width: auto;">
                           <div class="inner">
               
-              <b>Malaysia:</b> (HQ): BVentur has a strong network with the innovation ecosystem. 
+              <b>Malaysia:</b> (HQ): BizVentur has a strong network with the innovation ecosystem. 
               
                           </div>
                         </div>
