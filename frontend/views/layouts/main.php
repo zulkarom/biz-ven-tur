@@ -10,8 +10,10 @@ $dirAssests=Yii::$app->assetManager->getPublishedUrl('@frontend/views/myassets')
 <html>
    <head>
       <meta charset="utf-8"/>
-      <title>BVentur | We Catalyst Business</title>
-      
+
+      <title>BizVentur | We Catalyst Business</title>
+      <link rel = "icon" href ="<?= $dirAssests?>/icon/favicon.ico" 
+        type = "image/x-icon"> 
 
       <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
@@ -88,7 +90,7 @@ $dirAssests=Yii::$app->assetManager->getPublishedUrl('@frontend/views/myassets')
 }
 .grid-container {
   display: grid;
-  grid-auto-rows: 270px;
+  grid-auto-rows: 300px;
 }
 .grid-containerCol {
   display: grid;
@@ -143,9 +145,9 @@ div.d {
 
                <div class="column w-col w-col-4 w-col-stack">
                   <img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec136a22f007d0ab4a6dd86_homepage-investment.svg" alt="" class="homepage-second-row-image"/>
-                  <h4 class="text-grey">Angel</h4>
+                  <h4 class="text-grey">Incubator</h4>
                   <div class="grid-container">
-                  <p class="paragraph-2 text-grey">We invest in individuals and businesses that have the potential to succeed. Find out more about our angel project.</p>
+                  <p class="paragraph-2 text-grey">We helps new and startup companies to develop by providing services such as management training or office space through virtual and physical business incubator. Find out about our incubator services.</p>
                   </div>
                   <a href="" target="_blank" class="ghost-button w-button">Project</a> 
                </div>

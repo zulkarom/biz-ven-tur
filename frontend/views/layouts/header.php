@@ -279,13 +279,15 @@
                transform: rotate(180deg) translateY(10px) !important;
                }
 
-               .page-first-row {
+               /*.page-first-row {
     
-    max-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-    
-}
+                   max-width: 1000px;
+                   margin-right: auto;
+                   margin-left: auto;
+                   
+               }*/
+
+
             </style>
 
 
@@ -309,10 +311,10 @@
 
       </header>
 
-       <div class="row-section padding-tb-xxl page-first-row">
+       <div class="row-section padding-tb-xxl homepage-first-row">
          <img src="<?= $dirAssests?>/pictures/bizventur.png" alt="" class="heading" width="660"><br/>
-         <div class="homepage-first-row">
+         
          <h2 class="heading-2">We catalyst business.<br/></h2>
          <p class="paragraph font-size-small text-grey text-center">BizVentur is a company that ventures into transforming indigenous ideas into a rapidly growing companies providing products and services to the market.<br/></p>
-         </div>
+         
       </div>
