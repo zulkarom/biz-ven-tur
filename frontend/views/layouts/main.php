@@ -12,8 +12,8 @@ $dirAssests=Yii::$app->assetManager->getPublishedUrl('@frontend/views/myassets')
       <meta charset="utf-8"/>
 
       <title>BizVentur | We Catalyst Business</title>
-      <link rel = "icon" href ="<?= $dirAssests?>/icon/favicon.ico" 
-        type = "image/x-icon"> 
+      <!-- <link rel = "icon" href ="<?= $dirAssests?>/icon/favicon.ico" 
+        type = "image/x-icon">  -->
 
       <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
