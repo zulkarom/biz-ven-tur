@@ -21,7 +21,9 @@ class AppAsset extends AssetBundle
         'vendor/chartist/css/chartist.min.css',
         'vendor/bootstrap-select/dist/css/bootstrap-select.min.css',
         'css/style.css',
-        'https://cdn.lineicons.com/2.0/LineIcons.css'
+        'css/LineIcons.css',
+        
+        
     ];
     public $js = [
         //Required vendors
@@ -44,7 +46,7 @@ class AppAsset extends AssetBundle
 
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        // 'yii\web\YiiAsset',
+        // 'yii\bootstrap\BootstrapAsset',
     ];
 }
