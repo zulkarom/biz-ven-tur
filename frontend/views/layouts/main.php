@@ -1,5 +1,6 @@
 <?php
 use frontend\assets\AppAsset;
+use backend\models\WhoWeAre;
 
 AppAsset::register($this);
 $dirAssests=Yii::$app->assetManager->getPublishedUrl('@frontend/views/myassets');
@@ -134,33 +135,29 @@ div.d {
       <div class="row-section padding-tb-xxl homepage-second-row">
          <div class="container no-padding">
             <div class="columns w-row">
+              <?php
+                  $model = new WhoWeAre();
+                  $item = $model->item;
+                  foreach ($model->item as $item) {
+                    # code...
+                  
+                  
+                  echo' 
                <div class="column w-col w-col-4 w-col-stack">
                   <img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec136a248097607fd6ef656_homepage-incubation.svg" alt="" class="homepage-second-row-image"/>
-                  <h4 class="text-grey">Ventures</h4>
+                  <h4 class="text-grey">'.$item->title.'</h4>
                   <div class="grid-container"> 
-                  <p class="paragraph-2 text-grey">We build companies from scratch. We also help start-up to grow and consolidate their business. Find out more about our portfolio of companies.</p>
+                  <p class="paragraph-2 text-grey">'.$item->content.'</p>
                   </div>
-                  <a href="" class="ghost-button w-button">Our Companies</a>    
+                  <a href="" class="ghost-button w-button">'.$item->bttn_content.'</a>
                </div>
+               ';
 
-               <div class="column w-col w-col-4 w-col-stack">
-                  <img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec136a22f007d0ab4a6dd86_homepage-investment.svg" alt="" class="homepage-second-row-image"/>
-                  <h4 class="text-grey">Incubator</h4>
-                  <div class="grid-container">
-                  <p class="paragraph-2 text-grey">We helps new and startup companies to develop by providing services such as management training or office space through virtual and physical business incubator. Find out about our incubator services.</p>
-                  </div>
-                  <a href="" target="_blank" class="ghost-button w-button">Project</a> 
-               </div>
+               }
 
-               <div class="column w-col w-col-4 w-col-stack">
-                  <img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec136a2c3db1e224d66f90d_homepage-growth.svg" alt="" class="homepage-second-row-image"/>
-                  <h4 class="text-grey">Ecosystem</h4>
-                  <div class="grid-container">
-
-                  <p class="paragraph-2 text-grey">We create an entrepreneurial ecosystem focused on growing and/or helping to grow start-ups. Find out more about our ecosystem.</p>
-                  </div>
-                  <a href="" class="ghost-button w-button">Entrepreneuship</a>                
-               </div>
+               
+                   
+                  ?>
             </div>
          </div>
       </div>

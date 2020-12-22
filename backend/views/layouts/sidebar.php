@@ -6,12 +6,12 @@
                             <span class="nav-text">Dashboard</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="index.html">Dashboard</a></li>
-                            <li><a href="page-analytics.html">Analytics</a></li>
-                            <li><a href="page-review.html">Review</a></li>
-                            <li><a href="page-order.html">Order</a></li>
+                            <li><a href="index.php">Dashboard</a></li>
+                            <li><a href="header">Homepage Header</a></li>
+                            <li><a href="who-we-are">Who We Are</a></li>
+                            <!-- <li><a href="page-order.html">Order</a></li>
                             <li><a href="page-order-list.html">Order List</a></li>
-                            <li><a href="page-general-customers.html">General Customers</a></li>
+                            <li><a href="page-general-customers.html">General Customers</a></li> -->
                         </ul>
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -139,13 +139,9 @@
                     </li>
                 </ul>
             
-                <div class="add-menu-sidebar">
-                    <img src="<?= $dirAssests?>/images/icon1.png" alt=""/>
-                    <p>Organize your menus through button bellow</p>
-                    <a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
-                </div>
+                <br/><br/><br/>
                 <div class="copyright">
-                    <p><strong>Eatio - Restaurant Admin Dashboard</strong> © 2020 All Rights Reserved</p>
+                    <p><strong>BizVenture - Admin Dashboard</strong> © 2020 All Rights Reserved</p>
                     
                 </div>
             </div>
