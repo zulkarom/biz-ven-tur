@@ -23,6 +23,14 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'logo') ?>
 
+    <?= $form->field($model, 'menu_1') ?>
+
+    <?php // echo $form->field($model, 'menu_2') ?>
+
+    <?php // echo $form->field($model, 'menu_3') ?>
+
+    <?php // echo $form->field($model, 'menu_4') ?>
+
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
         <?= Html::resetButton('Reset', ['class' => 'btn btn-outline-secondary']) ?>

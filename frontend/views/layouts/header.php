@@ -1,3 +1,8 @@
+    <?php
+    use backend\models\Header;
+    use yii\helpers\Html;
+    ?>
+
     <header id="header" class="section">
          <div class="w-embed w-script">
             <script>
@@ -292,16 +297,22 @@
 
 
          </div>
-         <div data-collapse="small" data-animation="default" data-duration="400" data-no-scroll="1" data-doc-height="1" role="banner" class="navbar w-nav">
+
+         <?php  
+         $model = new Header();
+         $header = $model->header;
+
+
+         echo'<div data-collapse="small" data-animation="default" data-duration="400" data-no-scroll="1" data-doc-height="1" role="banner" class="navbar w-nav">
             <div class="container container-header w-container">
                <a href="" aria-current="page" class="brand w-nav-brand w--current">
-                  <div class="html-embed w-embed"><img src="<?= $dirAssests?>/pictures/bizventur.png" alt="" class="heading" width="100" height="23"></div>
+                  <div class="html-embed w-embed"><img src="'.Html::encode($dirAssests.''.$header[0]->logo).'" alt="" class="heading" width="100" height="23"></div>
                </a>
                <nav role="navigation" class="nav-menu w-nav-menu">
-                  <a href="#" class="mobile-nav-link w-nav-link">ABOUT</a>
-          <a href="#" class="mobile-nav-link w-nav-link">COMPANIES</a>
-                  <a href="#" class="mobile-nav-link investors w-nav-link">SERVICES</a>
-          <a href="#" class="mobile-nav-link w-nav-link">CONTACT US</a>
+                  <a href="#" class="mobile-nav-link w-nav-link">'.Html::encode($header[0]->menu_1).'</a>
+          <a href="#" class="mobile-nav-link w-nav-link">'.Html::encode($header[0]->menu_2).'</a>
+                  <a href="#" class="mobile-nav-link investors w-nav-link">'.Html::encode($header[0]->menu_3).'</a>
+          <a href="#" class="mobile-nav-link w-nav-link">'.Html::encode($header[0]->menu_4).'</a>
                </nav>
                <div class="menu-button text-uppercase w-nav-button">
                   <div class="text-block">menu</div>
@@ -312,9 +323,11 @@
       </header>
 
        <div class="row-section padding-tb-xxl homepage-first-row">
-         <img src="<?= $dirAssests?>/pictures/bizventur.png" alt="" class="heading" width="660"><br/>
+         <img src="'.Html::encode($dirAssests.''.$header[0]->logo).'" alt="" class="heading" width="660"><br/>
          
-         <h2 class="heading-2">We catalyst business.<br/></h2>
-         <p class="paragraph font-size-small text-grey text-center">BizVentur is a company that ventures into transforming indigenous ideas into a rapidly growing companies providing products and services to the market.<br/></p>
+         <h2 class="heading-2">'.Html::encode($header[0]->quote).'<br/></h2>
+         <p class="paragraph font-size-small text-grey text-center">'.Html::encode($header[0]->content).'<br/></p>
          
-      </div>
+      </div>';
+
+      ?>

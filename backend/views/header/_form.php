@@ -16,9 +16,23 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'logo')->textarea(['rows' => 6]) ?>
-
+     <div class="row">
+    <div class="col-md-3">
+        <?= $form->field($model, 'menu_1')->textInput(['maxlength' => true]) ?>
+    </div>
+    <div class="col-md-3">
+        <?= $form->field($model, 'menu_2')->textInput(['maxlength' => true]) ?>
+    </div>
+    <div class="col-md-3">
+        <?= $form->field($model, 'menu_3')->textInput(['maxlength' => true]) ?>
+    </div>
+    <div class="col-md-3">
+        <?= $form->field($model, 'menu_4')->textInput(['maxlength' => true]) ?>
+    </div>
     <div class="form-group">
+
+    <?= $form->field($model, 'logo')->fileInput() ?>
+
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>
 

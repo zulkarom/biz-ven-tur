@@ -1,9 +1,12 @@
 <?php
 use frontend\assets\AppAsset;
 use backend\models\WhoWeAre;
+use yii\helpers\Html;
+
 
 AppAsset::register($this);
 $dirAssests=Yii::$app->assetManager->getPublishedUrl('@frontend/views/myassets');
+
 ?>
 <?php $this->beginPage() ?>
 
@@ -139,17 +142,15 @@ div.d {
                   $model = new WhoWeAre();
                   $item = $model->item;
                   foreach ($model->item as $item) {
-                    # code...
-                  
-                  
+               
                   echo' 
                <div class="column w-col w-col-4 w-col-stack">
                   <img src="https://global-uploads.webflow.com/5e998d8310343e62a9e92ada/5ec136a248097607fd6ef656_homepage-incubation.svg" alt="" class="homepage-second-row-image"/>
-                  <h4 class="text-grey">'.$item->title.'</h4>
+                  <h4 class="text-grey">'.Html::encode($item->title).'</h4>
                   <div class="grid-container"> 
-                  <p class="paragraph-2 text-grey">'.$item->content.'</p>
+                  <p class="paragraph-2 text-grey">'.Html::encode($item->content).'</p>
                   </div>
-                  <a href="" class="ghost-button w-button">'.$item->bttn_content.'</a>
+                  <a href="" class="ghost-button w-button">'.Html::encode($item->bttn_content).'</a>
                </div>
                ';
 

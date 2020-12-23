@@ -33,6 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'quote',
             'content:ntext',
             'logo:ntext',
+            'menu_1',
+            'menu_2',
+            'menu_3',
+            'menu_4',
         ],
     ]) ?>
 

@@ -17,6 +17,10 @@ class m201222_083600_header extends Migration
             'quote' => $this->string()->notNull(),
             'content' => $this->text(),
             'logo' => $this->text(),
+            'menu1' => $this->text(),
+            'menu2' => $this->text(),
+            'menu3' => $this->text(),
+            'menu4' => $this->text(),
         ]);
     }
 

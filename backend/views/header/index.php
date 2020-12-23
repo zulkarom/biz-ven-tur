@@ -7,13 +7,12 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\HeaderSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Update Header';
+$this->title = 'Header';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="header-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
+    
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
@@ -25,6 +24,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'quote',
             'content:ntext',
             'logo:ntext',
+            'menu_1',
+            'menu_2',
+            'menu_3',
+            'menu_4',
 
             ['class' => 'yii\grid\ActionColumn',
                  'contentOptions' => ['style' => 'width: 12.7%'],

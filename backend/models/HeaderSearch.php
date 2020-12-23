@@ -18,7 +18,7 @@ class HeaderSearch extends Header
     {
         return [
             [['id'], 'integer'],
-            [['quote', 'content', 'logo'], 'safe'],
+            [['quote', 'content', 'logo', 'menu_1', 'menu_2', 'menu_3', 'menu_4'], 'safe'],
         ];
     }
 
@@ -63,7 +63,11 @@ class HeaderSearch extends Header
 
         $query->andFilterWhere(['like', 'quote', $this->quote])
             ->andFilterWhere(['like', 'content', $this->content])
-            ->andFilterWhere(['like', 'logo', $this->logo]);
+            ->andFilterWhere(['like', 'logo', $this->logo])
+            ->andFilterWhere(['like', 'menu_1', $this->menu_1])
+            ->andFilterWhere(['like', 'menu_2', $this->menu_2])
+            ->andFilterWhere(['like', 'menu_3', $this->menu_3])
+            ->andFilterWhere(['like', 'menu_4', $this->menu_4]);
 
         return $dataProvider;
     }
