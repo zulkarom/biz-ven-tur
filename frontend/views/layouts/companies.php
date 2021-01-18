@@ -65,8 +65,8 @@
                    <div class="grid-containerCol w-col-3 w-col-stack">
                      <div class="company-item">
                         <a data-modal-id="agencasa" href="#" class="company-link w-inline-block">
-                           <img src="<?= $dirAssests?>/pictures/mayuKitchen-W.png" alt="" class="image-3 companies-image--black">
-                           <img src="<?= $dirAssests?>/pictures/mayuKitchen-W1.png" alt="" class="image-2">
+                           <img src="<?= $dirAssests?>/pictures/QibResearch-W.png" alt="" class="image-3 companies-image--black">
+                           <img src="<?= $dirAssests?>/pictures/QibResearch-W1.png" alt="" class="image-2">
                         </a>
                      </div>
                    </div>
