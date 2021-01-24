@@ -21,7 +21,7 @@
                         <div class="nectar_hotspot">
                           <span></span>
                         </div>
-                        <div class="nttip" data-tooltip-position="top" style="height: auto; width: auto;">
+                        <div class="nttip" data-tooltip-position="top" style="height: auto; width:  100px;">
                           <div class="inner"><b>Vietnam
                           </div>
                         </div>
@@ -31,7 +31,7 @@
                         <div class="nectar_hotspot">
                           <span></span>
                         </div>
-                        <div class="nttip" data-tooltip-position="top" style="height: auto; width: auto;">
+                        <div class="nttip" data-tooltip-position="top" style="height: auto; width: 110px;">
                           <div class="inner">
               
               <b>Malaysia:</b> (HQ): BizVentur has a strong network with the innovation ecosystem. 
@@ -44,7 +44,7 @@
                         <div class="nectar_hotspot">
                           <span></span>
                         </div>
-                        <div class="nttip" data-tooltip-position="top" style="height: auto; width: auto;">
+                        <div class="nttip" data-tooltip-position="top" style="height: auto; width: 100px;">
                           <div class="inner"><b>Indonesia
                           </div>
                         </div>
